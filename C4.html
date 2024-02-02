@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://cdn2.vectorstock.com/i/1000x1000/33/46/mb-logo-initial-with-circle-line-cut-design-vector-29633346.jpg">
+    <title>Maverick Bank - Add Beneficiary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #E6E6FA;
+            color: #5E10B1;
+            font-variant: small-caps;
+            padding-bottom: 30px;
+        }
+        .navbar {
+            background-color: #5E10B1;
+            box-shadow: 0px 0px 20px 5px black;
+            font-variant: small-caps;
+        }
+        .navbar-brand img {
+            border-radius: 50%;
+            height: 45px;
+            width: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-brand img:hover,
+        .navbar-brand:hover {
+            transform: scale(1.1);
+        }
+        .navbar-brand {
+            color: white;
+            font-size: x-large;
+            transition: transform 0.3s ease-in-out;
+        }
+        .navbar-brand:hover {
+            transform: scale(1.1);
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .form-box {
+            background-color: white;
+            color: #5E10B1;
+            box-shadow: 0px 0px 20px 5px black;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 40px;
+            font-variant: small-caps;
+            transition: transform 0.3s ease-in-out;
+        }
+        .form-box:hover {
+            transform: translateY(-5px);
+        }
+        .form-control {
+            background-color: #E6E6FA;
+            color: #5E10B1;
+            box-shadow: 0px 0px 10px 2px black;
+        }
+        .btn {
+            background-color: #5E10B1;
+            color: white;
+            border: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #470881;
+        }
+        .nav-link {
+            font-size: large;
+            color: white;
+            transition: color 0.3s ease-in-out; /* Added transition property */
+        }
+        .nav-link:hover {
+            color: #E6E6FA;
+            transform: scale(1.1); /* Added the same animation effect as the brand */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn2.vectorstock.com/i/1000x1000/33/46/mb-logo-initial-with-circle-line-cut-design-vector-29633346.jpg" alt="Maverick Bank Logo">
+            <strong>Maverick Bank</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./CD1.html"><strong>Dashboard</strong></a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <strong>Options</strong>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Add New Account</a></li>
+                        <li><a class="dropdown-item" href="#">Close Account</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="form-box">
+                <h2 class="mb-4 text-center">Add Beneficiary Details</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="accountName" class="form-label">Name:</label>
+                        <input type="text" class="form-control" id="accountName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="accountNumber" class="form-label">Account Number:</label>
+                        <input type="text" class="form-control" id="accountNumber" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="bankName" class="form-label">Bank Name:</label>
+                        <select class="form-select" id="bankName" required>
+                            <option value="">Select Bank</option>
+                            
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="branch" class="form-label">Branch:</label>
+                        <select class="form-select" id="branch" required>
+                            <option value="">Select Branch</option>
+                            
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ifscCode" class="form-label">IFSC Code:</label>
+                        <input type="text" class="form-control" id="ifscCode" readonly>
+                    </div>
+                    <button type="submit" class="btn btn-light btn-block mx-auto d-block">Add Beneficiary</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
