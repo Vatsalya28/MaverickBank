@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,159 +11,160 @@
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <!-- icon fonts -->
     <script src="https://kit.fontawesome.com/62bd2157c3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style.css">
     <style>
-
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #E6E6FA;
+        }
+        .login-box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .login-box img {
+            width: 150px;
+            height: auto;
+        }
+        .login-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #5E10B1;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .btn-login {
+            background-color: #5E10B1;
+            color: #fff;
+        }
+        .btn-login:hover {
+            background-color: #400440;
+        }
+        .signup-link {
+            text-align: center;
+        }
     </style>
 </head>
+<body>
 
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-
-    <nav id="navbarNav" class="navbar navbar-expand-lg navbar-dark" style="background-color:#400440">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbrZCdHlfhEVvjShAvvV3z7TEuU21PGPPNg&usqp=CAU"
-                    alt="Maverick Bank Logo" width="50" height="50" class="d-inline-block  rounded-circle ">
-                <strong><b>MAVERICK BANK</b></strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item m-2">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item m-2">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-item m-2">
-                        <a class="nav-link" href="/contactUs.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-   
-
-
-    <div class="container mt-5" style="background-color: #E6E6FA;">
-        <div class="row">
-            <div class="col-md-4 mb-5 p-5 ">
-                <div class="login-box">
-                    <div class="text-center mb-3">
-                        <img src="Customer.png" alt="Customer Image" class="img-fluid mb-3"
-                            style="width: 150px; height: auto;">
-                    </div>
-                    <h2 class="mb-4 text-center">Customer Login</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username:</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password:</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-md-4">
-                                    <a href="./CD1.html" class="btn btn-primary btn-block mx-auto d-block"
-                                        style="background-color: #5E10B1;">Log In</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <p class="text-center mt-3">Don't have an account? <a id="link" href="./CustomerSignUp.html">Sign
-                            Up</a></p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-5 p-5">
-                <div class="login-box">
-                    <div class="text-center mb-3">
-                        <img src="BankEmployee.jpg" alt="Employee Image" class="img-fluid mb-3"
-                            style="width: 150px; height: auto;">
-                    </div>
-                    <h2 class="mb-4 text-center">Employee Login</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username:</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password:</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-md-4">
-                                    <a href="./CD1.html" class="btn btn-primary btn-block mx-auto d-block"
-                                        style="background-color: #5E10B1;">Log In</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <p class="text-center mt-3">Don't have an account? <a id="link" href="./EmployeeSignUp.html">Sign
-                            Up</a></p>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-5 p-5">
-                <div class="login-box">
-                    <div class="text-center mb-3">
-                        <img src="Admin.png" alt="Admin Image" class="img-fluid mb-3"
-                            style="width: 150px; height: auto;">
-                    </div>
-                    <h2 class="mb-4 text-center">Admin Login</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username:</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password:</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
-
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-md-4">
-                                    <a href="./CD1.html" class="btn btn-primary btn-block mx-auto d-block"
-                                        style="background-color: #5E10B1;">Log In</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <p class="text-center mt-3">Don't have an account? <a id="link" href="./AdminSignUp.html">Sign
-                            Up</a></p>
-                </div>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#400440">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGbrZCdHlfhEVvjShAvvV3z7TEuU21PGPPNg&usqp=CAU"
+                alt="Maverick Bank Logo" width="50" height="50" class="d-inline-block rounded-circle">
+            <strong><b>MAVERICK BANK</b></strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contactUs.html">Contact Us</a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="login-box">
+                <div class="text-center mb-3">
+                    <img src="Customer.png" alt="Customer Image">
+                </div>
+                <h2 class="login-title">Customer Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="customer-username">Username:</label>
+                        <input type="text" class="form-control" id="customer-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="customer-password">Password:</label>
+                        <input type="password" class="form-control" id="customer-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <a href="./CD1.html" class="btn btn-login btn-block">Log In</a>
+                    </div>
+                </form>
+                <p class="signup-link">Don't have an account? <a href="./CustomerSignUp.html">Sign Up</a></p>
+            </div>
+        </div>
+
+        <!-- Continued from the previous code -->
+
+<div class="col-md-4">
+    <div class="login-box">
+        <div class="text-center mb-3">
+            <img src="BankEmployee.jpg" alt="Employee Image">
+        </div>
+        <h2 class="login-title">Employee Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="employee-username">Username:</label>
+                <input type="text" class="form-control" id="employee-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="employee-password">Password:</label>
+                <input type="password" class="form-control" id="employee-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <a href="./CD1.html" class="btn btn-login btn-block">Log In</a>
+            </div>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="./register.html">Sign Up</a></p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="login-box">
+        <div class="text-center mb-3">
+            <img src="Admin.png" alt="Admin Image">
+        </div>
+        <h2 class="login-title">Admin Login</h2>
+        <form>
+            <div class="form-group">
+                <label for="admin-username">Username:</label>
+                <input type="text" class="form-control" id="admin-username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="admin-password">Password:</label>
+                <input type="password" class="form-control" id="admin-password" name="password" required>
+            </div>
+            <div class="form-group">
+                <a href="./CD1.html" class="btn btn-login btn-block">Log In</a>
+            </div>
+        </form>
+        <p class="signup-link">Don't have an account? <a href="./AdminSignUp.html">Sign Up</a></p>
+    </div>
+</div>
+
+<!-- End of the HTML code -->
 
 
+    </div>
+</div>
 
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>
